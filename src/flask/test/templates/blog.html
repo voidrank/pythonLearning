@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homepage</title>
+</head>
+<body>
+	<form action="" method="POST">
+		<input type="submit" name="Write new blog" value="Write new blog">
+		<p>
+		<font color="#FF0000" size = "20">
+			Bloglist
+		</font>
+		{% for b in bloglist %}
+			<p>
+			<a>
+			{{b.title}}
+			</a>
+		{% endfor %}
+	</form>
+</body>
+</html>
